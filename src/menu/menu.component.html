@@ -1,0 +1,37 @@
+<h1 class="c-text" routerLink="">Basic Angular</h1>
+<h3 class="sub-title">For Banana Bootcamp</h3>
+
+<div class="center-div">
+  <button mat-button [matMenuTriggerFor]="section1" class="menu-button">
+    Section 1
+  </button>
+  <mat-menu #section1="matMenu">
+    <button mat-menu-item routerLink="variable">Variable</button>
+    <button mat-menu-item routerLink="event-binding">Event binding</button>
+    <button mat-menu-item routerLink="prop-binding">Property binding</button>
+    <button mat-menu-item routerLink="two-way-binding">Two-way binding</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="section2" class="menu-button">
+    Section 2
+  </button>
+  <mat-menu #section2="matMenu">
+    <button mat-menu-item routerLink="if-clause">If-Clause</button>
+    <button mat-menu-item routerLink="loop">Loop</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="section3" class="menu-button">
+    Section 3
+  </button>
+  <mat-menu #section3="matMenu">
+    <button mat-menu-item routerLink="form">Form</button>
+    <button mat-menu-item routerLink="component-ex">Component Example</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="section4" class="menu-button">
+    Section 4
+  </button>
+  <mat-menu #section4="matMenu">
+    <button mat-menu-item routerLink="service">Service</button>
+  </mat-menu>
+</div>
